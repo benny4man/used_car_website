@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  /* suppress browser defaults and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* sets alt box model */
+  font-family: "Poppins", sans-serif, Tahoma;
+  /* set variables for colors */
+  --bg-primary: #f2efea;
+  --bg-secondary: #7a5c61;
+  --font-color-primary: #26413c;
+  --font-color-secondary: #030812;
+  --backup-color: #4baeff;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+header {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.068);
+}
+
+header h1 {
+  font-size: 46px;
+  color: var(--font-color-secondary);
+  font-weight: 600;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------ main */
+main {
+  display: flex;
+  align-items: stretch;
+}
+
+/* ------------------------------------------------------------------ filter bar */
+.filter_bar {
+  padding: 0px 20px;
+  width: 15vw;
+  height: 100%;
+  min-height: 1340px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter_bar > p {
+  font-size: 20px;
+  padding: 20px 0;
+  border-bottom: 2px solid #919191;
+}
+
+.filter_bar > div {
+  padding: 20px 0;
+  border-bottom: 2px solid #919191;
+}
+
+.filter_bar div p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter_bar div:first-child {
+  padding-top: 0;
+}
+
+.filter_bar .color {
+  border-bottom: none;
+}
+
+/* ------------------------------------------------------------------ filter bar   year */
+.year label {
+  margin-left: 10px;
+}
+
+.year select {
+  border: none;
+  border-radius: 0;
+  background: #d1d1d1;
+  padding: 0px 5px;
+}
+
+/* ------------------------------------------------------------------ filter bar   make */
+.filter_bar .make input,
+.make label {
+  margin-top: 5px;
+}
+
+.filter_bar .make div {
+  display: flex;
+  align-items: center;
+}
+
+.filter_bar .make input {
+  height: 20px;
+  width: 20px;
+  margin: 0px 5px 0px 10px;
+}
+
+/* ------------------------------------------------------------------ filter bar   mileage */
+.filter_bar .mileage label {
+  margin-left: 10px;
+}
+
+.filter_bar .mileage input {
+  width: 100px;
+  padding: 0 2px;
+}
+
+/* ------------------------------------------------------------------ filter bar   price */
+.filter_bar .price label {
+  margin-left: 10px;
+}
+
+.filter_bar .price input {
+  width: 100px;
+  padding: 0 2px;
+}
+
+/* ------------------------------------------------------------------ filter bar   color */
+.filter_bar .color input,
+.color label {
+  margin-top: 5px;
+}
+
+.filter_bar .color div {
+  display: flex;
+  align-items: center;
+}
+
+.filter_bar .color input {
+  height: 20px;
+  width: 20px;
+  margin: 0px 5px 0px 10px;
+}
+
+/* ------------------------------------------------------------------ cars and car_card */
+.cars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 85vw;
+  padding: 100px;
+}
+
+.empty_msg{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #7a7a7a;
+}
+
+.car_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  font-family: arial;
+}
+
+.car_card h1, .car_card h2{
+    padding: 0px 0px 0px 5px;
+}
+
+.car_card p{
+    padding: 5px 0 5px 5px;
+}
+
+.car_price {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.car_card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.car_card button:hover {
+  opacity: 0.7;
+}
+
+.filter_button {
+  background: #d1d1d1;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+  width: 100px;
+  height: 25px;
+  transition: background 0.3s ease;
+}
+
+.filter_button:hover {
+  background: #b9b9b9;
+}

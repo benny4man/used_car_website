@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimbo's Used Cars</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/index.js" defer></script>
+    <script src="./js/usedCars.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Jimbo's Used Cars</h1>
+        <h2>Best Used Cars in Michigan</h2>
+    </header>
+    <main>
+        <div class="filter_bar">
+            <p>Filters</p>
+            <div class="year">
+                <p>Year</p>
+                <label for="min_year">From:</label>
+                <select id="min_year" name="min_year">
+                    <!-- dynamically created -->
+                </select>
+
+                <label for="max_year">To:</label>
+                <select id="max_year" name="max_year">
+                    <!-- dynamically created -->
+                </select>
+            </div>
+            <div class="make">
+                <p>Make</p>
+                <!-- dynamically created -->
+            </div>
+            <div class="mileage">
+                <p>Mileage</p>
+                <label for="mileage_box">Max Miles:</label>
+                <!-- dynamically created -->
+            </div>
+            <div class="price">
+                <p>Price</p>
+                <label for="price_box">Max Price:</label>
+                <!-- dynamically created -->
+            </div>
+            <div class="color">
+                <p>Color</p>
+                <!-- dynamically created -->
+            </div>
+            <button class="filter_button">Apply</button>
+        </div>
+        <div class="cars">
+            <div class="car_card">
+                <h1>make-model</h1>
+                <h2>Year</h2>
+                <p>color</p>
+                <p>mileage</p>
+                <p>gas_mileage</p>
+                <p class="price">price</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
